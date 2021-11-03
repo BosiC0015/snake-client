@@ -13,6 +13,7 @@ const connect = function () {
     // code that does something when the connection is first established
     console.log('Successfully connected to game server');
     conn.write('Name: nnw');
+    conn.write('Say: Hello🔆');
     // Hard-codec move commands:
     // conn.write('Move: up');
     // setTimeout(() => conn.write('Move: up'), 100);
