@@ -19,7 +19,11 @@ const connect = function () {
     // setInterval(() => conn.write('Move: up'), 100);
   });
 
+  conn.on('data', (data) => {
+    console.log('Server says: ', data);
+  });
+
   return conn;
 };
 
-module.exports = connect;
+module.exports = { connect };
